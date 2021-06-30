@@ -130,7 +130,7 @@ export default {
         let chatMsgDiv = document.querySelector( '#chat-messages' );
         let contentAlign = 'justify-content-end';
         let senderName = 'You';
-        let msgBg = 'bg-white';
+        let msgBg = 'bg-secondary';
 
         if ( senderType === 'remote' ) {
             contentAlign = 'justify-content-start';

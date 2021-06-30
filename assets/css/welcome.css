@@ -4,7 +4,7 @@ body {
   left: 0px;
   top: 4.547473508864641e-13px;
   border-radius: 8px;
-  background: #F5F5F5;
+  background-color: #292828;
 }
 
 .header {
@@ -41,7 +41,7 @@ body {
   font-family: Segoe UI;
   font-size: 34px;
   line-height: 60px;
-  color: #616161;
+  color: white;
 }
 
 .content {
@@ -83,7 +83,7 @@ body {
   line-height: 140%;
   display: flex;
   align-items: center;
-  color: #6264a7;
+  color: #a1a2ca;
   flex: none;
   order: 0;
   align-self: center;
@@ -91,25 +91,6 @@ body {
   margin: 32px 0px;
 }
 
-.content_left_title_access_denied {
-  position: static;
-  width: 851px;
-  height: 0px;
-  left: 0px;
-  top: 0px;
-  font-family: Segoe UI;
-  font-size: 45px;
-  line-height: 100%;
-  display: flex;
-  align-items: center;
-  color: #6264a7;
-  flex: none;
-  order: 0;
-  align-self: center;
-  flex-grow: 0;
-  margin: 16px 0px;
-  margin-bottom: 0px;
-}
 
 .content_left_text {
   position: static;
@@ -120,31 +101,13 @@ body {
   font-family: Segoe UI;
   font-size: 20px;
   line-height: 150%;
-  color: #242424;
+  color: white;
   flex: none;
   order: 1;
   align-self: center;
   flex-grow: 0;
   /* margin: 32px 0px; */
   margin-top: 30px;
-}
-
-.error_msg {
-  position: static;
-  /* width: 847px;
-  height: 60px;
-  left: 2px;
-  top: 166px; */
-  font-family: Segoe UI;
-  font-size: 14px;
-  line-height: 100%;
-  color: #242424;
-  flex: none;
-  order: 1;
-  align-self: center;
-  flex-grow: 0;
-  /* margin: 32px 0px; */
-  /* margin-top: 30px; */
 }
 
 .content_left_resources {
@@ -175,7 +138,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
-  color: #242424;
+  color: white;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -192,7 +155,7 @@ body {
   height: 40px;
   left: 0px;
   top: 62px;
-  background: #ebebeb;
+  background: #605E5C;
   border-radius: 16px;
   flex: none;
   order: 2;
@@ -241,15 +204,15 @@ body {
 }
 
 a:link {
-  color: #242424;
+  color: white;
 }
 
 a:visited {
-  color: #464eb8;
+  color: #c7c7df;
 }
 
 a:hover {
-  color: #464eb8;
+  color: #c7c7df;
 }
 
 a:link {

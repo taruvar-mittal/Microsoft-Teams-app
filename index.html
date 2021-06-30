@@ -104,8 +104,11 @@
                     <button id='create-room' class="btn offset-md-3 btn-block signin_btn rounded-1">Create Room</button>
                 </div>
 
-                <div class="col-12 col-md-4 offset-md-4 mb-3" id='room-created'></div>
             </div>
+            <div class="row">
+                <div class="text-center written col-12 mb-3" id='room-created'></div>
+            </div>
+
         </div>
 
 
@@ -150,15 +153,15 @@
                     <div class="row mt-2 mb-2" id='videos'></div>
                 </div>
 
-                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' hidden>
+                <div class="chatbox col-md-3 chat-col d-print-none mb-2" id='chat-pane' hidden>
                     <div class="row">
-                        <div class="col-12 text-center h2 mb-3">CHAT</div>
+                        <div class="chatbox_title col-12 text-center mb-3">Messages</div>
                     </div>
 
                     <div id='chat-messages'></div>
 
                     <div class="row">
-                        <textarea id='chat-input' class="form-control rounded-0 chat-box border-info" rows='3' placeholder="Type here..."></textarea>
+                        <textarea id='chat-input' class="form-control rounded-0 chat-box" rows='3' placeholder="Type your message"></textarea>
                     </div>
                 </div>
             </div>
