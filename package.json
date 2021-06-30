@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Microsoft Teams app clone",
   "main": "app.js",
-  "engines": {
-    "node": "14.7.0"
-  },
   "scripts": {
     "start": "node app.js",
     "watch": "nodemon --watch \"src/\" --exec \"node src/app.js\"",
