@@ -1,3 +1,7 @@
+body {
+  background-color: #292828;
+}
+
 .chat-col{
     right: -100vw;
     bottom: 0;
@@ -155,13 +159,19 @@
 
 .record-option{
     height: 200px;
+    background-color: #484644;
+    color: white;
     border-radius: 10%;
-    border: 1px solid #17a2b8;
+    /* border: 1px solid #17a2b8; */
     cursor: pointer;
     padding: 10px;
     vertical-align: middle;
 }
 
+.nav_logo {
+    height: 5.5vh;
+    width: 3vw;
+}
 
 .custom-modal {
     display: none;
@@ -176,11 +186,59 @@
 
 
 .custom-modal-content {
-    background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #17a2b8;
-    width: 80%;
+    width: 40%;
+    background: #252424;
+border: 1px solid rgba(202, 202, 202, 0.7);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+border-radius: 3px;
+}
+
+.navbar {
+    background-color: #6264A7;
+}
+
+.illustration {
+    margin-top: 6%;
+}
+
+.illustration img{
+    height: 90%;
+    width: 40%;
+}
+
+.greetings {
+    font-size: 18px;
+  line-height: 24px;
+  color: white;
+  margin-top: 0;
+}
+
+.written {
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    margin-top: 0.15em;
+}
+
+.input_field {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.signin_btn {
+    color: white;
+    width: 50%;
+  font-family: Segoe UI;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  background: #6264a7;
+  box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.32),
+    0px 1.6px 3.6px rgba(0, 0, 0, 0.28);
+  border-radius: 4px;
 }
 
 
