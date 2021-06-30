@@ -1,10 +1,10 @@
 const stream = ( socket ) => {
     socket.on( 'subscribe', ( data ) => {
-        // join a room
+        //subscribe/join a room
         socket.join( data.room );
         socket.join( data.socketId );
 
-        // new user's arrival update
+        //Inform other members in the room of new user's arrival
         if ( socket.adapter.rooms[data.room].length > 1 ) {
             socket.to( data.room ).emit( 'new user', { socketId: data.socketId } );
         }

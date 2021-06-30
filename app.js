@@ -10,12 +10,13 @@ app.use( favicon( path.join( __dirname, 'favicon.ico' ) ) );
 app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 
 app.get( '/newroom', ( req, res ) => {
-    res.sendFile( __dirname + '/newroom.html' );
+    res.sendFile( __dirname + '/index.html' );
 } );
 
 app.get( '/', ( req, res ) => {
-    res.sendFile( __dirname + '/index.html' );
+    res.sendFile( __dirname + '/welcome.html' );
 } );
+
 
 io.of( '/stream' ).on( 'connection', stream );
 

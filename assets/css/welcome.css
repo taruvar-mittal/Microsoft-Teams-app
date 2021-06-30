@@ -290,36 +290,6 @@ a:link {
     color: #ecedf5;
 }
 
-.try_again_button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 12px;
-  padding-left: 37px;
-  padding-right: 0px;
-  position: absolute;
-  font-family: Segoe UI;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 130%;
-  width: 110px;
-  height: 43px;
-  /* right: 120px; */
-  top: 140px;
-  background: #6264a7;
-  color: #ffffff !important;
-  border-radius: 64px;
-}
 
-.try_again_button:hover{
-    background: #4a4c84;
-}
 
-.try_again_button a{
-    align-content: center;
-    color: white;
-}
 
-.try_again_button a:hover{
-    color: #ecedf5;
-}
