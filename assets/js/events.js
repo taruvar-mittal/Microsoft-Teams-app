@@ -20,7 +20,7 @@ window.addEventListener( 'load', () => {
             chatElem.classList.add( 'chat-opened' );
         }
 
-        //remove the 'New' badge on chat icon (if any) once chat is opened.
+        //remove the 'New' badge on chat icon once chat is opened.
         setTimeout( () => {
             if ( document.querySelector( '#chat-pane' ).classList.contains( 'chat-opened' ) ) {
                 helpers.toggleChatNotificationBadge();
@@ -34,7 +34,6 @@ window.addEventListener( 'load', () => {
         if ( !document.pictureInPictureElement ) {
             document.getElementById( 'local' ).requestPictureInPicture()
                 .catch( error => {
-                    // Video failed to enter Picture-in-Picture mode.
                     console.error( error );
                 } );
         }

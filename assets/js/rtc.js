@@ -1,7 +1,4 @@
-/**
- * @author Amir Sanni <amirsanni@gmail.com>
- * @date 6th January, 2020
- */
+
 import h from './helpers.js';
 
 window.addEventListener( 'load', () => {
@@ -40,13 +37,10 @@ window.addEventListener( 'load', () => {
         socket.on( 'connect', () => {
             //set socketId
             socketId = socket.io.engine.id;
-
-
             socket.emit( 'subscribe', {
                 room: room,
                 socketId: socketId
             } );
-
 
             socket.on( 'new user', ( data ) => {
                 socket.emit( 'newUserStart', { to: data.socketId, sender: socketId } );
@@ -54,12 +48,10 @@ window.addEventListener( 'load', () => {
                 init( true, data.socketId );
             } );
 
-
             socket.on( 'newUserStart', ( data ) => {
                 pc.push( data.sender );
                 init( false, data.sender );
             } );
-
 
             socket.on( 'ice candidates', async ( data ) => {
                 data.candidate ? await pc[data.sender].addIceCandidate( new RTCIceCandidate( data.candidate ) ) : '';
@@ -176,15 +168,10 @@ window.addEventListener( 'load', () => {
             }
 
 
-
-            //send ice candidate to partnerNames
             pc[partnerName].onicecandidate = ( { candidate } ) => {
                 socket.emit( 'ice candidates', { candidate: candidate, to: partnerName, sender: socketId } );
             };
 
-
-
-            //add
             pc[partnerName].ontrack = ( e ) => {
                 let str = e.streams[0];
                 if ( document.getElementById( `${ partnerName }-video` ) ) {
@@ -245,7 +232,6 @@ window.addEventListener( 'load', () => {
                 }
             };
         }
-
 
 
         function shareScreen() {
@@ -433,10 +419,9 @@ window.addEventListener( 'load', () => {
 
         //When record button is clicked
         document.getElementById( 'record' ).addEventListener( 'click', ( e ) => {
-            /**
-             * Ask user what they want to record.
-             * Get the stream based on selection and start recording
-             */
+          
+             // Get the stream based on selection and start recording
+             
             if ( !mediaRecorder || mediaRecorder.state == 'inactive' ) {
                 h.toggleModal( 'recording-options-modal', true );
             }
